@@ -1,0 +1,6 @@
+# Shell scripts must have Unix line endings. A script saved on Windows with
+# CRLF endings fails on Linux with "/usr/bin/env: 'bash\r': No such file or
+# directory" - the \r is the invisible Windows half of the line ending.
+*.sh   text eol=lf
+*.yml  text eol=lf
+*.py   text eol=lf

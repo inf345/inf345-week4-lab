@@ -1,0 +1,9 @@
+# Policy for this repository, checked by zizmor (a GitHub Actions security linter).
+# GitHub's own actions are pinned to a major version; anything from a third
+# party must be pinned to a full commit SHA. Week 4 explains why.
+rules:
+  unpinned-uses:
+    config:
+      policies:
+        "actions/*": ref-pin
+        "*": hash-pin
